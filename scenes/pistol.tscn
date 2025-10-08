@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddpr0tedc4ivw"]
+
+[ext_resource type="Texture2D" uid="uid://4bgro64usboc" path="res://sprites/waterGun.webp" id="1_08c3m"]
+[ext_resource type="Script" uid="uid://tfpgk8h71amc" path="res://scripts/pistol.gd" id="2_bttkv"]
+
+[node name="Pistol" type="Sprite2D"]
+position = Vector2(80, 56)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_08c3m")
+offset = Vector2(216.995, 16.055)
+flip_h = true
+script = ExtResource("2_bttkv")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(480, 9.53674e-06)

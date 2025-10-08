@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccjwjdrmli52y"]
+
+[ext_resource type="Script" uid="uid://biv7fov8c7jij" path="res://scripts/hud.gd" id="1_qpvh6"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_qpvh6")
+
+[node name="Score" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -576.0
+offset_right = 576.0
+offset_bottom = 72.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Message" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -186.0
+offset_top = -80.07501
+offset_right = 185.99896
+offset_bottom = -31.075012
+grow_horizontal = 2
+grow_vertical = 0
+text = "Survive and Shoot as many Enemies and Survive"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MessageTimer" type="Timer" parent="."]
